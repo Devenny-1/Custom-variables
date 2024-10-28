@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom variables</title>
+
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <p> This listing defines a variable named --main-font, and sets its value to a set of com
+        mon sans-serif fonts. The name must begin with two hyphens (--) to distinguish it
+         from CSS properties, followed by whatever name you’d like to use.
+         Variables must be declared inside a declaration block. I’ve used the :root selector
+         here, which sets the variable for the whole page—I’ll explain this shortly.
+         By itself, this variable declaration doesn’t do anything until we use it. Let’s apply it
+         to a paragraph to produce a result like that in figure 2.13
+    </p>
+
+    <div class="panel">
+        <h2>Single-origin</h2>
+        <div class="body">
+            we have built partnerships with small farms aroundthe world to hand-select beans at the peak of season. We
+            then careful roast in small batches to maximize their potential.
+        </div>
+    </div>
+    
+    <aside class="dark">
+        <div class="panel">
+            <h2>Single-origin</h2>
+            <div class="body">
+               We have built partnerships with small farms aroundthe world to hand-select beans at the peak of season. We
+               then careful roast in small batches to maximize their potential.
+            </div>
+        </div>
+    </aside>
+    
+    <script type="text/javascript">
+         var rootElement = document.documentElement;
+         rootElement.style.setProperty('--main-bg', '#cdf'); 
+    </script>
+      
+</html>

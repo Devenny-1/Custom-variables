@@ -1,0 +1,19 @@
+<script type="text/javascript">
+  var rootElement = document.documentElement;
+  var styles = getComputedStyle(rootElement);     
+  var mainColor = styles.getPropertyValue('--main-bg');  
+  console.log(String(mainColor).trim());   
+</script>
+
+use the above javavscript code to change the --main-bg var declared codes in css , dynmacally
+or rather immediately, duhhh
+
+<script type="text/javascript">
+         var rootElement = document.documentElement;
+         rootElement.style.setProperty('--main-bg', '#cdf'); 
+    </script>
+
+With this technique, you can use JavaScript to re-theme your site, live in the
+ browser. Or, you could highlight certain parts of the page or make any number of
+ other on-the-fly changes. Using only a few lines of JavaScript, you can make changes
+ that’ll affect a large number of elements on the page
